@@ -1,0 +1,2 @@
+github "aws/aws-sdk-ios" "2.4.4"
+github "realm/realm-cocoa" "v1.0.1"
