@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C38E4CFE1D1D399900D50AC7 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C38E4CFD1D1D399900D50AC7 /* Realm.framework */; };
+		C38E4D001D1D39AC00D50AC7 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C38E4CFF1D1D39AC00D50AC7 /* RealmSwift.framework */; };
+		C38E4D021D1D4F5200D50AC7 /* UploadLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38E4D011D1D4F5200D50AC7 /* UploadLog.swift */; };
 		C396345B1D1CE47F000082F5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C396345A1D1CE47F000082F5 /* Constants.swift */; };
 		C3C831671D1BEA6F00CFE93B /* AWSCognito.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3C831661D1BEA6F00CFE93B /* AWSCognito.framework */; };
 		C3C831691D1C064E00CFE93B /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3C831681D1C064E00CFE93B /* Photos.framework */; };
@@ -39,6 +42,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C38E4CFD1D1D399900D50AC7 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
+		C38E4CFF1D1D39AC00D50AC7 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
+		C38E4D011D1D4F5200D50AC7 /* UploadLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadLog.swift; sourceTree = "<group>"; };
 		C396345A1D1CE47F000082F5 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		C3C831661D1BEA6F00CFE93B /* AWSCognito.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSCognito.framework; path = Carthage/Build/iOS/AWSCognito.framework; sourceTree = "<group>"; };
 		C3C831681D1C064E00CFE93B /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
@@ -64,6 +70,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C38E4D001D1D39AC00D50AC7 /* RealmSwift.framework in Frameworks */,
+				C38E4CFE1D1D399900D50AC7 /* Realm.framework in Frameworks */,
 				C3C831691D1C064E00CFE93B /* Photos.framework in Frameworks */,
 				C3C831671D1BEA6F00CFE93B /* AWSCognito.framework in Frameworks */,
 				C3EDC08A1D1BE7C4008C8C56 /* AWSCore.framework in Frameworks */,
@@ -91,6 +99,8 @@
 		C3EDC04C1D1BDD57008C8C56 = {
 			isa = PBXGroup;
 			children = (
+				C38E4CFF1D1D39AC00D50AC7 /* RealmSwift.framework */,
+				C38E4CFD1D1D399900D50AC7 /* Realm.framework */,
 				C3C831681D1C064E00CFE93B /* Photos.framework */,
 				C3C831661D1BEA6F00CFE93B /* AWSCognito.framework */,
 				C3EDC0891D1BE7C4008C8C56 /* AWSCore.framework */,
@@ -122,6 +132,7 @@
 				C3EDC0611D1BDD57008C8C56 /* LaunchScreen.storyboard */,
 				C3EDC0641D1BDD57008C8C56 /* Info.plist */,
 				C396345A1D1CE47F000082F5 /* Constants.swift */,
+				C38E4D011D1D4F5200D50AC7 /* UploadLog.swift */,
 			);
 			path = PickToS3;
 			sourceTree = "<group>";
@@ -284,6 +295,8 @@
 				"$(SRCROOT)/Carthage/Build/iOS/AWSCore.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/AWSCognito.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/AWSS3.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Realm.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RealmSwift.framework",
 			);
 			outputPaths = (
 			);
@@ -299,6 +312,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3EDC05B1D1BDD57008C8C56 /* ViewController.swift in Sources */,
+				C38E4D021D1D4F5200D50AC7 /* UploadLog.swift in Sources */,
 				C3EDC0591D1BDD57008C8C56 /* AppDelegate.swift in Sources */,
 				C396345B1D1CE47F000082F5 /* Constants.swift in Sources */,
 			);
