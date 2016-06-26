@@ -13,6 +13,7 @@
 		C396345B1D1CE47F000082F5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C396345A1D1CE47F000082F5 /* Constants.swift */; };
 		C3C831671D1BEA6F00CFE93B /* AWSCognito.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3C831661D1BEA6F00CFE93B /* AWSCognito.framework */; };
 		C3C831691D1C064E00CFE93B /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3C831681D1C064E00CFE93B /* Photos.framework */; };
+		C3C89C6D1D1EBC3700475169 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3C89C6C1D1EBC3700475169 /* Social.framework */; };
 		C3EDC0591D1BDD57008C8C56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3EDC0581D1BDD57008C8C56 /* AppDelegate.swift */; };
 		C3EDC05B1D1BDD57008C8C56 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3EDC05A1D1BDD57008C8C56 /* ViewController.swift */; };
 		C3EDC05E1D1BDD57008C8C56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3EDC05C1D1BDD57008C8C56 /* Main.storyboard */; };
@@ -48,6 +49,7 @@
 		C396345A1D1CE47F000082F5 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		C3C831661D1BEA6F00CFE93B /* AWSCognito.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSCognito.framework; path = Carthage/Build/iOS/AWSCognito.framework; sourceTree = "<group>"; };
 		C3C831681D1C064E00CFE93B /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		C3C89C6C1D1EBC3700475169 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		C3EDC0551D1BDD57008C8C56 /* PickToS3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PickToS3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3EDC0581D1BDD57008C8C56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C3EDC05A1D1BDD57008C8C56 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3C89C6D1D1EBC3700475169 /* Social.framework in Frameworks */,
 				C38E4D001D1D39AC00D50AC7 /* RealmSwift.framework in Frameworks */,
 				C38E4CFE1D1D399900D50AC7 /* Realm.framework in Frameworks */,
 				C3C831691D1C064E00CFE93B /* Photos.framework in Frameworks */,
@@ -99,6 +102,7 @@
 		C3EDC04C1D1BDD57008C8C56 = {
 			isa = PBXGroup;
 			children = (
+				C3C89C6C1D1EBC3700475169 /* Social.framework */,
 				C38E4CFF1D1D39AC00D50AC7 /* RealmSwift.framework */,
 				C38E4CFD1D1D399900D50AC7 /* Realm.framework */,
 				C3C831681D1C064E00CFE93B /* Photos.framework */,

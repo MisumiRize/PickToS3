@@ -2,6 +2,7 @@ import UIKit
 import RealmSwift
 import Photos
 import AWSS3
+import Social
 
 class ViewController: UITableViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
@@ -47,6 +48,13 @@ class ViewController: UITableViewController, UIImagePickerControllerDelegate, UI
         return cell!
     }
 
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let compose = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
+        let url = NSURL(string: BaseURL + logs[indexPath.row].fileName)!
+        compose.addURL(url)
+        presentViewController(compose, animated: true, completion: nil)
+    }
+
     @IBAction func newButtonClicked() {
         let imagePicker = UIImagePickerController()
         imagePicker.sourceType = .PhotoLibrary
@@ -71,6 +79,8 @@ class ViewController: UITableViewController, UIImagePickerControllerDelegate, UI
             req.bucket = S3BucketName
             req.key = fileName
             req.body = fileURL
+            req.contentType = "image/jpeg"
+            req.ACL = .PublicRead
 
             AWSS3TransferManager.defaultS3TransferManager()
                 .upload(req)
