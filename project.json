@@ -1,0 +1,9 @@
+
+{
+  "name": "pick-to-s3",
+  "description": "Pick to S3 Lambda function",
+  "memory": 128,
+  "timeout": 5,
+  "role": "arn:aws:iam::529466855746:role/pick-to-s3_lambda_function",
+  "environment": {}
+}
