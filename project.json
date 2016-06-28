@@ -5,5 +5,7 @@
   "memory": 128,
   "timeout": 5,
   "role": "arn:aws:iam::529466855746:role/pick-to-s3_lambda_function",
-  "environment": {}
+  "environment": {
+    "BASE_URL": "https://misumirize-images.s3-website-ap-northeast-1.amazonaws.com"
+  }
 }

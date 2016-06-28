@@ -1,0 +1,10 @@
+!!! 5
+html
+    head
+        meta[name="twitter:card"][content="photo"]
+        meta[name="twitter:site"][content="@Misumi_Rize"]
+        meta[name="twitter:title"][content="@Misumi_Rize's photo"]
+        meta[name="twitter:image"][content=BaseURL + "/" + Key]
+        meta[name="twitter:url"][content=BaseURL + "/" + HTMLKey]
+    body
+        img[src=Key]
